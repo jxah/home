@@ -10,20 +10,23 @@
             <H4>Hola!, Este es Jacobo's 'Homepage'</H4>
         </p>
     </h6><p> Haz click para ver lo que hice</p><h6>
-        <ul id="help"><h1 class="anoncer">extras</h1>
+        <ul id="help"><h1 class="announcer">extras</h1>
         <li><a href="../stuff/jh.html">Homepage-2</a>
             <li><a href="../games/third.html">culebra</a></li>
             <li><a href="../enigma/enigma.html">enigma</a></li>
-            <li><a href="../games/tictactoe.html">tic tac toe
-            <h1 class="anoncer">Articls</h1>
+            <li><a href="../games/tictactoe.html">tic tac toe</a></li>
+            <h1 class="announcer">Articles</h1>
             <li><a href="../stuff/lsoc/lovesofcoding.html"></a> </li> 
             <li><a href="../stuff/lsoc/svps.html"> gggh   <kbd></kbd>                      </a></li>
             <script>
-                help=document.getElementById(help)
-                loud=help.getElementsByClassName(anoncer)
-                function colors(loud) {
-                    loud
+                var help=document.getElementById("help")
+                var loud= help.getElementsByClassName("announcer")
+                scream = function(daClassList) {
+                    for(i=0; i<daClassList.length; i++){
+                        daClassList[i].style.backgroundColor = "#FF0000"
+                    }
                 }
+                scream(loud)
             </script>
         </ul>
     </body>
